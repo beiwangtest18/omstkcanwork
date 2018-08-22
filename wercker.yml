@@ -157,6 +157,7 @@ test:
             sudo export JAVA_HOME=/usr/lib/jvm/java
             echo ${ANT_HOME}
             echo ${JAVA_HOME}
+            sudo ifconfig
             
             sudo cd ./test/functional/WhackaPodUIAuto
             sudo chmod 777 result.sh
