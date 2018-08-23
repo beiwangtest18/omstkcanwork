@@ -162,10 +162,10 @@ test:
             sudo chmod 777 result.sh
             echo "!!!Run get IP test case"
             ant -f getip.xml -logfile test.log
-            sudo cp -rf ./logs/* $WERCKER_REPORT_ARTIFACTS_DIR
+            sudo cp -rf ./logs/* $WERCKER_REPORT_ARTIFACTS_DIR/UIlogs
             sudo ./result.sh
             echo "!!!Run open application and check text test case"
             ant -file checkbuild.xml -logfile test.log
-            sudo cp -rf ./logs/* $WERCKER_REPORT_ARTIFACTS_DIR
+            sudo cp -rf ./logs/* $WERCKER_REPORT_ARTIFACTS_DIR/UIlogs
             sudo ./result.sh
             
