@@ -167,4 +167,3 @@ test:
             echo "!!!Run open application and check text test case"
             ant -file checkbuild.xml -logfile test.log
             sudo ./result.sh
-            sudo cp -rf ./logs/* $WERCKER_REPORT_ARTIFACTS_DIR
